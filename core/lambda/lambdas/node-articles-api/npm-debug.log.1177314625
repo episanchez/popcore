@@ -1,0 +1,1382 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/episanchez/.nvm/versions/node/v7.7.3/bin/node',
+1 verbose cli   '/home/episanchez/.nvm/versions/node/v7.7.3/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--loglevel=error' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData aws-serverless-express
+20 silly mapToRegistry name aws-serverless-express
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'aws-serverless-express',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'aws-serverless-express',
+23 silly mapToRegistry   name: 'aws-serverless-express',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/aws-serverless-express
+25 verbose request uri https://registry.npmjs.org/aws-serverless-express
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 15:12:57
+28 verbose request id 355291c2dfbecc52
+29 verbose etag W/"7b41960a4dbef48ac03bb925148462cc"
+30 verbose lastModified Sat, 26 May 2018 17:48:49 GMT
+31 http request GET https://registry.npmjs.org/aws-serverless-express
+32 http 304 https://registry.npmjs.org/aws-serverless-express
+33 verbose headers { date: 'Wed, 30 May 2018 13:12:57 GMT',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'set-cookie': [ '__cfduid=d81134441da6df94e16ef29c36d37e5cd1527685977; expires=Thu, 30-May-19 13:12:57 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'cf-cache-status': 'HIT',
+33 verbose headers   'cf-ray': '42317491dac7b78f-CDG',
+33 verbose headers   etag: '"7b41960a4dbef48ac03bb925148462cc"',
+33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 verbose headers   'last-modified': 'Sat, 26 May 2018 17:48:49 GMT',
+33 verbose headers   vary: 'accept-encoding, accept',
+33 verbose headers   server: 'cloudflare' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Wed, 30 May 2018 13:12:57 GMT',
+34 silly get     connection: 'keep-alive',
+34 silly get     'set-cookie': [ '__cfduid=d81134441da6df94e16ef29c36d37e5cd1527685977; expires=Thu, 30-May-19 13:12:57 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     'cf-cache-status': 'HIT',
+34 silly get     'cf-ray': '42317491dac7b78f-CDG',
+34 silly get     etag: '"7b41960a4dbef48ac03bb925148462cc"',
+34 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 silly get     'last-modified': 'Sat, 26 May 2018 17:48:49 GMT',
+34 silly get     vary: 'accept-encoding, accept',
+34 silly get     server: 'cloudflare' } ]
+35 verbose etag https://registry.npmjs.org/aws-serverless-express from cache
+36 verbose get saving aws-serverless-express to /home/episanchez/.npm/registry.npmjs.org/aws-serverless-express/.cache.json
+37 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+38 silly pickManifestFromRegistryMetadata spec >=3.2.0 <4.0.0 tag latest versions [ '1.0.0',
+38 silly pickManifestFromRegistryMetadata   '1.0.1',
+38 silly pickManifestFromRegistryMetadata   '1.1.0',
+38 silly pickManifestFromRegistryMetadata   '1.1.1',
+38 silly pickManifestFromRegistryMetadata   '1.1.2',
+38 silly pickManifestFromRegistryMetadata   '1.1.3',
+38 silly pickManifestFromRegistryMetadata   '1.1.4',
+38 silly pickManifestFromRegistryMetadata   '1.2.0',
+38 silly pickManifestFromRegistryMetadata   '1.3.0',
+38 silly pickManifestFromRegistryMetadata   '2.1.1',
+38 silly pickManifestFromRegistryMetadata   '2.1.2',
+38 silly pickManifestFromRegistryMetadata   '2.1.3',
+38 silly pickManifestFromRegistryMetadata   '2.2.0',
+38 silly pickManifestFromRegistryMetadata   '3.0.0',
+38 silly pickManifestFromRegistryMetadata   '3.0.1',
+38 silly pickManifestFromRegistryMetadata   '3.0.2',
+38 silly pickManifestFromRegistryMetadata   '3.1.0',
+38 silly pickManifestFromRegistryMetadata   '2.1.4',
+38 silly pickManifestFromRegistryMetadata   '3.1.2',
+38 silly pickManifestFromRegistryMetadata   '3.1.3',
+38 silly pickManifestFromRegistryMetadata   '3.2.0' ]
+39 silly resolveWithNewModule aws-serverless-express@3.2.0 checking installable status
+40 silly cache add args [ 'aws-serverless-express@^3.2.0', null ]
+41 verbose cache add spec aws-serverless-express@^3.2.0
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'aws-serverless-express@^3.2.0',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'aws-serverless-express',
+42 silly cache add   name: 'aws-serverless-express',
+42 silly cache add   rawSpec: '^3.2.0',
+42 silly cache add   spec: '>=3.2.0 <4.0.0',
+42 silly cache add   type: 'range' }
+43 silly addNamed aws-serverless-express@>=3.2.0 <4.0.0
+44 verbose addNamed ">=3.2.0 <4.0.0" is a valid semver range for aws-serverless-express
+45 silly addNameRange { name: 'aws-serverless-express',
+45 silly addNameRange   range: '>=3.2.0 <4.0.0',
+45 silly addNameRange   hasData: false }
+46 silly mapToRegistry name aws-serverless-express
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'aws-serverless-express',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'aws-serverless-express',
+49 silly mapToRegistry   name: 'aws-serverless-express',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/aws-serverless-express
+51 verbose addNameRange registry:https://registry.npmjs.org/aws-serverless-express not in flight; fetching
+52 verbose get https://registry.npmjs.org/aws-serverless-express not expired, no request
+53 silly addNameRange number 2 { name: 'aws-serverless-express',
+53 silly addNameRange   range: '>=3.2.0 <4.0.0',
+53 silly addNameRange   hasData: true }
+54 silly addNameRange versions [ 'aws-serverless-express',
+54 silly addNameRange   [ '1.0.0',
+54 silly addNameRange     '1.0.1',
+54 silly addNameRange     '1.1.0',
+54 silly addNameRange     '1.1.1',
+54 silly addNameRange     '1.1.2',
+54 silly addNameRange     '1.1.3',
+54 silly addNameRange     '1.1.4',
+54 silly addNameRange     '1.2.0',
+54 silly addNameRange     '1.3.0',
+54 silly addNameRange     '2.1.1',
+54 silly addNameRange     '2.1.2',
+54 silly addNameRange     '2.1.3',
+54 silly addNameRange     '2.2.0',
+54 silly addNameRange     '3.0.0',
+54 silly addNameRange     '3.0.1',
+54 silly addNameRange     '3.0.2',
+54 silly addNameRange     '3.1.0',
+54 silly addNameRange     '2.1.4',
+54 silly addNameRange     '3.1.2',
+54 silly addNameRange     '3.1.3',
+54 silly addNameRange     '3.2.0' ] ]
+55 silly pickManifestFromRegistryMetadata spec >=3.2.0 <4.0.0 tag latest versions [ '1.0.0',
+55 silly pickManifestFromRegistryMetadata   '1.0.1',
+55 silly pickManifestFromRegistryMetadata   '1.1.0',
+55 silly pickManifestFromRegistryMetadata   '1.1.1',
+55 silly pickManifestFromRegistryMetadata   '1.1.2',
+55 silly pickManifestFromRegistryMetadata   '1.1.3',
+55 silly pickManifestFromRegistryMetadata   '1.1.4',
+55 silly pickManifestFromRegistryMetadata   '1.2.0',
+55 silly pickManifestFromRegistryMetadata   '1.3.0',
+55 silly pickManifestFromRegistryMetadata   '2.1.1',
+55 silly pickManifestFromRegistryMetadata   '2.1.2',
+55 silly pickManifestFromRegistryMetadata   '2.1.3',
+55 silly pickManifestFromRegistryMetadata   '2.2.0',
+55 silly pickManifestFromRegistryMetadata   '3.0.0',
+55 silly pickManifestFromRegistryMetadata   '3.0.1',
+55 silly pickManifestFromRegistryMetadata   '3.0.2',
+55 silly pickManifestFromRegistryMetadata   '3.1.0',
+55 silly pickManifestFromRegistryMetadata   '2.1.4',
+55 silly pickManifestFromRegistryMetadata   '3.1.2',
+55 silly pickManifestFromRegistryMetadata   '3.1.3',
+55 silly pickManifestFromRegistryMetadata   '3.2.0' ]
+56 silly addNamed aws-serverless-express@latest
+57 verbose addNamed "latest" is being treated as a dist-tag for aws-serverless-express
+58 info addNameTag [ 'aws-serverless-express', 'latest' ]
+59 silly mapToRegistry name aws-serverless-express
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry data Result {
+62 silly mapToRegistry   raw: 'aws-serverless-express',
+62 silly mapToRegistry   scope: null,
+62 silly mapToRegistry   escapedName: 'aws-serverless-express',
+62 silly mapToRegistry   name: 'aws-serverless-express',
+62 silly mapToRegistry   rawSpec: '',
+62 silly mapToRegistry   spec: 'latest',
+62 silly mapToRegistry   type: 'tag' }
+63 silly mapToRegistry uri https://registry.npmjs.org/aws-serverless-express
+64 verbose addNameTag registry:https://registry.npmjs.org/aws-serverless-express already in flight; waiting
+65 silly addNameTag next cb for aws-serverless-express with tag latest
+66 silly addNamed aws-serverless-express@3.2.0
+67 verbose addNamed "3.2.0" is a plain semver version for aws-serverless-express
+68 silly cache afterAdd aws-serverless-express@3.2.0
+69 verbose afterAdd /home/episanchez/.npm/aws-serverless-express/3.2.0/package/package.json not in flight; writing
+70 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /home/episanchez/.npm/aws-serverless-express/3.2.0/package/package.json written
+72 silly fetchNamedPackageData binary-case
+73 silly mapToRegistry name binary-case
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'binary-case',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'binary-case',
+76 silly mapToRegistry   name: 'binary-case',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/binary-case
+78 silly fetchNamedPackageData type-is
+79 silly mapToRegistry name type-is
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: 'type-is',
+82 silly mapToRegistry   scope: null,
+82 silly mapToRegistry   escapedName: 'type-is',
+82 silly mapToRegistry   name: 'type-is',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/type-is
+84 verbose request uri https://registry.npmjs.org/binary-case
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 15:12:58
+87 verbose etag W/"81a0d8be598fa97c772b91e59cf3931f"
+88 verbose lastModified Sat, 26 May 2018 18:25:34 GMT
+89 http request GET https://registry.npmjs.org/binary-case
+90 verbose request uri https://registry.npmjs.org/type-is
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 15:12:58
+93 verbose etag W/"03dea3520dfe6573af2fe7ba3b4e22a2"
+94 verbose lastModified Sun, 27 May 2018 20:09:00 GMT
+95 http request GET https://registry.npmjs.org/type-is
+96 http 304 https://registry.npmjs.org/type-is
+97 verbose headers { date: 'Wed, 30 May 2018 13:12:58 GMT',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'set-cookie': [ '__cfduid=d6d09325ce266ea3fc3421a935624c07e1527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   'cf-cache-status': 'HIT',
+97 verbose headers   'cf-ray': '423174937938b7c5-CDG',
+97 verbose headers   etag: '"03dea3520dfe6573af2fe7ba3b4e22a2"',
+97 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+97 verbose headers   'last-modified': 'Sun, 27 May 2018 20:09:00 GMT',
+97 verbose headers   vary: 'accept-encoding, accept',
+97 verbose headers   server: 'cloudflare' }
+98 silly get cb [ 304,
+98 silly get   { date: 'Wed, 30 May 2018 13:12:58 GMT',
+98 silly get     connection: 'keep-alive',
+98 silly get     'set-cookie': [ '__cfduid=d6d09325ce266ea3fc3421a935624c07e1527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     'cf-cache-status': 'HIT',
+98 silly get     'cf-ray': '423174937938b7c5-CDG',
+98 silly get     etag: '"03dea3520dfe6573af2fe7ba3b4e22a2"',
+98 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+98 silly get     'last-modified': 'Sun, 27 May 2018 20:09:00 GMT',
+98 silly get     vary: 'accept-encoding, accept',
+98 silly get     server: 'cloudflare' } ]
+99 verbose etag https://registry.npmjs.org/type-is from cache
+100 verbose get saving type-is to /home/episanchez/.npm/registry.npmjs.org/type-is/.cache.json
+101 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+102 silly pickManifestFromRegistryMetadata spec >=1.6.16 <2.0.0 tag latest versions [ '1.0.0',
+102 silly pickManifestFromRegistryMetadata   '1.0.1',
+102 silly pickManifestFromRegistryMetadata   '1.1.0',
+102 silly pickManifestFromRegistryMetadata   '1.2.0',
+102 silly pickManifestFromRegistryMetadata   '1.2.1',
+102 silly pickManifestFromRegistryMetadata   '1.2.2',
+102 silly pickManifestFromRegistryMetadata   '1.3.0',
+102 silly pickManifestFromRegistryMetadata   '1.3.1',
+102 silly pickManifestFromRegistryMetadata   '1.3.2',
+102 silly pickManifestFromRegistryMetadata   '1.4.0',
+102 silly pickManifestFromRegistryMetadata   '1.5.0',
+102 silly pickManifestFromRegistryMetadata   '1.5.1',
+102 silly pickManifestFromRegistryMetadata   '1.5.2',
+102 silly pickManifestFromRegistryMetadata   '1.5.3',
+102 silly pickManifestFromRegistryMetadata   '1.5.4',
+102 silly pickManifestFromRegistryMetadata   '1.5.5',
+102 silly pickManifestFromRegistryMetadata   '1.5.6',
+102 silly pickManifestFromRegistryMetadata   '1.5.7',
+102 silly pickManifestFromRegistryMetadata   '1.6.0',
+102 silly pickManifestFromRegistryMetadata   '1.6.1',
+102 silly pickManifestFromRegistryMetadata   '1.6.2',
+102 silly pickManifestFromRegistryMetadata   '1.6.3',
+102 silly pickManifestFromRegistryMetadata   '1.6.4',
+102 silly pickManifestFromRegistryMetadata   '1.6.5',
+102 silly pickManifestFromRegistryMetadata   '1.6.6',
+102 silly pickManifestFromRegistryMetadata   '1.6.7',
+102 silly pickManifestFromRegistryMetadata   '1.6.8',
+102 silly pickManifestFromRegistryMetadata   '1.6.9',
+102 silly pickManifestFromRegistryMetadata   '1.6.10',
+102 silly pickManifestFromRegistryMetadata   '1.6.11',
+102 silly pickManifestFromRegistryMetadata   '1.6.12',
+102 silly pickManifestFromRegistryMetadata   '1.6.13',
+102 silly pickManifestFromRegistryMetadata   '1.6.14',
+102 silly pickManifestFromRegistryMetadata   '1.6.15',
+102 silly pickManifestFromRegistryMetadata   '1.6.16' ]
+103 silly resolveWithNewModule type-is@1.6.16 checking installable status
+104 silly cache add args [ 'type-is@^1.6.16', null ]
+105 verbose cache add spec type-is@^1.6.16
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'type-is@^1.6.16',
+106 silly cache add   scope: null,
+106 silly cache add   escapedName: 'type-is',
+106 silly cache add   name: 'type-is',
+106 silly cache add   rawSpec: '^1.6.16',
+106 silly cache add   spec: '>=1.6.16 <2.0.0',
+106 silly cache add   type: 'range' }
+107 silly addNamed type-is@>=1.6.16 <2.0.0
+108 verbose addNamed ">=1.6.16 <2.0.0" is a valid semver range for type-is
+109 silly addNameRange { name: 'type-is', range: '>=1.6.16 <2.0.0', hasData: false }
+110 silly mapToRegistry name type-is
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'type-is',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   escapedName: 'type-is',
+113 silly mapToRegistry   name: 'type-is',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/type-is
+115 verbose addNameRange registry:https://registry.npmjs.org/type-is not in flight; fetching
+116 verbose get https://registry.npmjs.org/type-is not expired, no request
+117 silly addNameRange number 2 { name: 'type-is', range: '>=1.6.16 <2.0.0', hasData: true }
+118 silly addNameRange versions [ 'type-is',
+118 silly addNameRange   [ '1.0.0',
+118 silly addNameRange     '1.0.1',
+118 silly addNameRange     '1.1.0',
+118 silly addNameRange     '1.2.0',
+118 silly addNameRange     '1.2.1',
+118 silly addNameRange     '1.2.2',
+118 silly addNameRange     '1.3.0',
+118 silly addNameRange     '1.3.1',
+118 silly addNameRange     '1.3.2',
+118 silly addNameRange     '1.4.0',
+118 silly addNameRange     '1.5.0',
+118 silly addNameRange     '1.5.1',
+118 silly addNameRange     '1.5.2',
+118 silly addNameRange     '1.5.3',
+118 silly addNameRange     '1.5.4',
+118 silly addNameRange     '1.5.5',
+118 silly addNameRange     '1.5.6',
+118 silly addNameRange     '1.5.7',
+118 silly addNameRange     '1.6.0',
+118 silly addNameRange     '1.6.1',
+118 silly addNameRange     '1.6.2',
+118 silly addNameRange     '1.6.3',
+118 silly addNameRange     '1.6.4',
+118 silly addNameRange     '1.6.5',
+118 silly addNameRange     '1.6.6',
+118 silly addNameRange     '1.6.7',
+118 silly addNameRange     '1.6.8',
+118 silly addNameRange     '1.6.9',
+118 silly addNameRange     '1.6.10',
+118 silly addNameRange     '1.6.11',
+118 silly addNameRange     '1.6.12',
+118 silly addNameRange     '1.6.13',
+118 silly addNameRange     '1.6.14',
+118 silly addNameRange     '1.6.15',
+118 silly addNameRange     '1.6.16' ] ]
+119 silly pickManifestFromRegistryMetadata spec >=1.6.16 <2.0.0 tag latest versions [ '1.0.0',
+119 silly pickManifestFromRegistryMetadata   '1.0.1',
+119 silly pickManifestFromRegistryMetadata   '1.1.0',
+119 silly pickManifestFromRegistryMetadata   '1.2.0',
+119 silly pickManifestFromRegistryMetadata   '1.2.1',
+119 silly pickManifestFromRegistryMetadata   '1.2.2',
+119 silly pickManifestFromRegistryMetadata   '1.3.0',
+119 silly pickManifestFromRegistryMetadata   '1.3.1',
+119 silly pickManifestFromRegistryMetadata   '1.3.2',
+119 silly pickManifestFromRegistryMetadata   '1.4.0',
+119 silly pickManifestFromRegistryMetadata   '1.5.0',
+119 silly pickManifestFromRegistryMetadata   '1.5.1',
+119 silly pickManifestFromRegistryMetadata   '1.5.2',
+119 silly pickManifestFromRegistryMetadata   '1.5.3',
+119 silly pickManifestFromRegistryMetadata   '1.5.4',
+119 silly pickManifestFromRegistryMetadata   '1.5.5',
+119 silly pickManifestFromRegistryMetadata   '1.5.6',
+119 silly pickManifestFromRegistryMetadata   '1.5.7',
+119 silly pickManifestFromRegistryMetadata   '1.6.0',
+119 silly pickManifestFromRegistryMetadata   '1.6.1',
+119 silly pickManifestFromRegistryMetadata   '1.6.2',
+119 silly pickManifestFromRegistryMetadata   '1.6.3',
+119 silly pickManifestFromRegistryMetadata   '1.6.4',
+119 silly pickManifestFromRegistryMetadata   '1.6.5',
+119 silly pickManifestFromRegistryMetadata   '1.6.6',
+119 silly pickManifestFromRegistryMetadata   '1.6.7',
+119 silly pickManifestFromRegistryMetadata   '1.6.8',
+119 silly pickManifestFromRegistryMetadata   '1.6.9',
+119 silly pickManifestFromRegistryMetadata   '1.6.10',
+119 silly pickManifestFromRegistryMetadata   '1.6.11',
+119 silly pickManifestFromRegistryMetadata   '1.6.12',
+119 silly pickManifestFromRegistryMetadata   '1.6.13',
+119 silly pickManifestFromRegistryMetadata   '1.6.14',
+119 silly pickManifestFromRegistryMetadata   '1.6.15',
+119 silly pickManifestFromRegistryMetadata   '1.6.16' ]
+120 silly addNamed type-is@latest
+121 verbose addNamed "latest" is being treated as a dist-tag for type-is
+122 info addNameTag [ 'type-is', 'latest' ]
+123 silly mapToRegistry name type-is
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry data Result {
+126 silly mapToRegistry   raw: 'type-is',
+126 silly mapToRegistry   scope: null,
+126 silly mapToRegistry   escapedName: 'type-is',
+126 silly mapToRegistry   name: 'type-is',
+126 silly mapToRegistry   rawSpec: '',
+126 silly mapToRegistry   spec: 'latest',
+126 silly mapToRegistry   type: 'tag' }
+127 silly mapToRegistry uri https://registry.npmjs.org/type-is
+128 verbose addNameTag registry:https://registry.npmjs.org/type-is already in flight; waiting
+129 silly addNameTag next cb for type-is with tag latest
+130 silly addNamed type-is@1.6.16
+131 verbose addNamed "1.6.16" is a plain semver version for type-is
+132 silly cache afterAdd type-is@1.6.16
+133 verbose afterAdd /home/episanchez/.npm/type-is/1.6.16/package/package.json not in flight; writing
+134 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+135 verbose afterAdd /home/episanchez/.npm/type-is/1.6.16/package/package.json written
+136 http 304 https://registry.npmjs.org/binary-case
+137 verbose headers { date: 'Wed, 30 May 2018 13:12:58 GMT',
+137 verbose headers   connection: 'keep-alive',
+137 verbose headers   'set-cookie': [ '__cfduid=d19f34a88e8dab49fca5f177f94ec20a81527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+137 verbose headers   'cache-control': 'max-age=300',
+137 verbose headers   'cf-cache-status': 'REVALIDATED',
+137 verbose headers   'cf-ray': '423174934cbfb78f-CDG',
+137 verbose headers   etag: '"81a0d8be598fa97c772b91e59cf3931f"',
+137 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+137 verbose headers   'last-modified': 'Sat, 26 May 2018 18:25:34 GMT',
+137 verbose headers   vary: 'accept-encoding, accept',
+137 verbose headers   server: 'cloudflare' }
+138 silly get cb [ 304,
+138 silly get   { date: 'Wed, 30 May 2018 13:12:58 GMT',
+138 silly get     connection: 'keep-alive',
+138 silly get     'set-cookie': [ '__cfduid=d19f34a88e8dab49fca5f177f94ec20a81527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+138 silly get     'cache-control': 'max-age=300',
+138 silly get     'cf-cache-status': 'REVALIDATED',
+138 silly get     'cf-ray': '423174934cbfb78f-CDG',
+138 silly get     etag: '"81a0d8be598fa97c772b91e59cf3931f"',
+138 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+138 silly get     'last-modified': 'Sat, 26 May 2018 18:25:34 GMT',
+138 silly get     vary: 'accept-encoding, accept',
+138 silly get     server: 'cloudflare' } ]
+139 verbose etag https://registry.npmjs.org/binary-case from cache
+140 verbose get saving binary-case to /home/episanchez/.npm/registry.npmjs.org/binary-case/.cache.json
+141 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+142 silly pickManifestFromRegistryMetadata spec >=1.0.0 <2.0.0 tag latest versions [ '1.0.0', '1.1.0', '1.1.1', '1.1.2', '1.1.3', '1.1.4' ]
+143 silly resolveWithNewModule binary-case@1.1.4 checking installable status
+144 silly cache add args [ 'binary-case@^1.0.0', null ]
+145 verbose cache add spec binary-case@^1.0.0
+146 silly cache add parsed spec Result {
+146 silly cache add   raw: 'binary-case@^1.0.0',
+146 silly cache add   scope: null,
+146 silly cache add   escapedName: 'binary-case',
+146 silly cache add   name: 'binary-case',
+146 silly cache add   rawSpec: '^1.0.0',
+146 silly cache add   spec: '>=1.0.0 <2.0.0',
+146 silly cache add   type: 'range' }
+147 silly addNamed binary-case@>=1.0.0 <2.0.0
+148 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for binary-case
+149 silly addNameRange { name: 'binary-case', range: '>=1.0.0 <2.0.0', hasData: false }
+150 silly mapToRegistry name binary-case
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry data Result {
+153 silly mapToRegistry   raw: 'binary-case',
+153 silly mapToRegistry   scope: null,
+153 silly mapToRegistry   escapedName: 'binary-case',
+153 silly mapToRegistry   name: 'binary-case',
+153 silly mapToRegistry   rawSpec: '',
+153 silly mapToRegistry   spec: 'latest',
+153 silly mapToRegistry   type: 'tag' }
+154 silly mapToRegistry uri https://registry.npmjs.org/binary-case
+155 verbose addNameRange registry:https://registry.npmjs.org/binary-case not in flight; fetching
+156 verbose get https://registry.npmjs.org/binary-case not expired, no request
+157 silly addNameRange number 2 { name: 'binary-case', range: '>=1.0.0 <2.0.0', hasData: true }
+158 silly addNameRange versions [ 'binary-case',
+158 silly addNameRange   [ '1.0.0', '1.1.0', '1.1.1', '1.1.2', '1.1.3', '1.1.4' ] ]
+159 silly pickManifestFromRegistryMetadata spec >=1.0.0 <2.0.0 tag latest versions [ '1.0.0', '1.1.0', '1.1.1', '1.1.2', '1.1.3', '1.1.4' ]
+160 silly addNamed binary-case@latest
+161 verbose addNamed "latest" is being treated as a dist-tag for binary-case
+162 info addNameTag [ 'binary-case', 'latest' ]
+163 silly mapToRegistry name binary-case
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: 'binary-case',
+166 silly mapToRegistry   scope: null,
+166 silly mapToRegistry   escapedName: 'binary-case',
+166 silly mapToRegistry   name: 'binary-case',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag' }
+167 silly mapToRegistry uri https://registry.npmjs.org/binary-case
+168 verbose addNameTag registry:https://registry.npmjs.org/binary-case already in flight; waiting
+169 silly addNameTag next cb for binary-case with tag latest
+170 silly addNamed binary-case@1.1.4
+171 verbose addNamed "1.1.4" is a plain semver version for binary-case
+172 silly cache afterAdd binary-case@1.1.4
+173 verbose afterAdd /home/episanchez/.npm/binary-case/1.1.4/package/package.json not in flight; writing
+174 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+175 verbose afterAdd /home/episanchez/.npm/binary-case/1.1.4/package/package.json written
+176 silly fetchNamedPackageData media-typer
+177 silly mapToRegistry name media-typer
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry data Result {
+180 silly mapToRegistry   raw: 'media-typer',
+180 silly mapToRegistry   scope: null,
+180 silly mapToRegistry   escapedName: 'media-typer',
+180 silly mapToRegistry   name: 'media-typer',
+180 silly mapToRegistry   rawSpec: '',
+180 silly mapToRegistry   spec: 'latest',
+180 silly mapToRegistry   type: 'tag' }
+181 silly mapToRegistry uri https://registry.npmjs.org/media-typer
+182 silly fetchNamedPackageData mime-types
+183 silly mapToRegistry name mime-types
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry data Result {
+186 silly mapToRegistry   raw: 'mime-types',
+186 silly mapToRegistry   scope: null,
+186 silly mapToRegistry   escapedName: 'mime-types',
+186 silly mapToRegistry   name: 'mime-types',
+186 silly mapToRegistry   rawSpec: '',
+186 silly mapToRegistry   spec: 'latest',
+186 silly mapToRegistry   type: 'tag' }
+187 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+188 verbose request uri https://registry.npmjs.org/media-typer
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 15:12:58
+191 verbose etag W/"c93602f16e8e85360bf857b5e7a75d5e"
+192 verbose lastModified Sun, 27 May 2018 07:42:59 GMT
+193 http request GET https://registry.npmjs.org/media-typer
+194 verbose request uri https://registry.npmjs.org/mime-types
+195 verbose request no auth needed
+196 info attempt registry request try #1 at 15:12:58
+197 verbose etag W/"791cd03acdbec5403dda6624ce20e0b4"
+198 verbose lastModified Sun, 27 May 2018 08:04:29 GMT
+199 http request GET https://registry.npmjs.org/mime-types
+200 http 304 https://registry.npmjs.org/media-typer
+201 verbose headers { date: 'Wed, 30 May 2018 13:12:58 GMT',
+201 verbose headers   connection: 'keep-alive',
+201 verbose headers   'set-cookie': [ '__cfduid=d6d09325ce266ea3fc3421a935624c07e1527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+201 verbose headers   'cache-control': 'max-age=300',
+201 verbose headers   'cf-cache-status': 'HIT',
+201 verbose headers   'cf-ray': '423174987f45b7c5-CDG',
+201 verbose headers   etag: '"c93602f16e8e85360bf857b5e7a75d5e"',
+201 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+201 verbose headers   'last-modified': 'Sun, 27 May 2018 07:42:59 GMT',
+201 verbose headers   vary: 'accept-encoding, accept',
+201 verbose headers   server: 'cloudflare' }
+202 silly get cb [ 304,
+202 silly get   { date: 'Wed, 30 May 2018 13:12:58 GMT',
+202 silly get     connection: 'keep-alive',
+202 silly get     'set-cookie': [ '__cfduid=d6d09325ce266ea3fc3421a935624c07e1527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+202 silly get     'cache-control': 'max-age=300',
+202 silly get     'cf-cache-status': 'HIT',
+202 silly get     'cf-ray': '423174987f45b7c5-CDG',
+202 silly get     etag: '"c93602f16e8e85360bf857b5e7a75d5e"',
+202 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+202 silly get     'last-modified': 'Sun, 27 May 2018 07:42:59 GMT',
+202 silly get     vary: 'accept-encoding, accept',
+202 silly get     server: 'cloudflare' } ]
+203 verbose etag https://registry.npmjs.org/media-typer from cache
+204 verbose get saving media-typer to /home/episanchez/.npm/registry.npmjs.org/media-typer/.cache.json
+205 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+206 silly pickManifestFromRegistryMetadata spec 0.3.0 tag latest versions [ '0.0.0', '0.1.0', '0.2.0', '0.3.0' ]
+207 silly resolveWithNewModule media-typer@0.3.0 checking installable status
+208 silly cache add args [ 'media-typer@0.3.0', null ]
+209 verbose cache add spec media-typer@0.3.0
+210 silly cache add parsed spec Result {
+210 silly cache add   raw: 'media-typer@0.3.0',
+210 silly cache add   scope: null,
+210 silly cache add   escapedName: 'media-typer',
+210 silly cache add   name: 'media-typer',
+210 silly cache add   rawSpec: '0.3.0',
+210 silly cache add   spec: '0.3.0',
+210 silly cache add   type: 'version' }
+211 silly addNamed media-typer@0.3.0
+212 verbose addNamed "0.3.0" is a plain semver version for media-typer
+213 silly mapToRegistry name media-typer
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry data Result {
+216 silly mapToRegistry   raw: 'media-typer',
+216 silly mapToRegistry   scope: null,
+216 silly mapToRegistry   escapedName: 'media-typer',
+216 silly mapToRegistry   name: 'media-typer',
+216 silly mapToRegistry   rawSpec: '',
+216 silly mapToRegistry   spec: 'latest',
+216 silly mapToRegistry   type: 'tag' }
+217 silly mapToRegistry uri https://registry.npmjs.org/media-typer
+218 verbose addNameVersion registry:https://registry.npmjs.org/media-typer not in flight; fetching
+219 verbose get https://registry.npmjs.org/media-typer not expired, no request
+220 silly cache afterAdd media-typer@0.3.0
+221 verbose afterAdd /home/episanchez/.npm/media-typer/0.3.0/package/package.json not in flight; writing
+222 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+223 verbose afterAdd /home/episanchez/.npm/media-typer/0.3.0/package/package.json written
+224 http 304 https://registry.npmjs.org/mime-types
+225 verbose headers { date: 'Wed, 30 May 2018 13:12:58 GMT',
+225 verbose headers   connection: 'keep-alive',
+225 verbose headers   'set-cookie': [ '__cfduid=d19f34a88e8dab49fca5f177f94ec20a81527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+225 verbose headers   'cache-control': 'max-age=300',
+225 verbose headers   'cf-cache-status': 'HIT',
+225 verbose headers   'cf-ray': '423174987b47b78f-CDG',
+225 verbose headers   etag: '"791cd03acdbec5403dda6624ce20e0b4"',
+225 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+225 verbose headers   'last-modified': 'Sun, 27 May 2018 08:04:29 GMT',
+225 verbose headers   vary: 'accept-encoding, accept',
+225 verbose headers   server: 'cloudflare' }
+226 silly get cb [ 304,
+226 silly get   { date: 'Wed, 30 May 2018 13:12:58 GMT',
+226 silly get     connection: 'keep-alive',
+226 silly get     'set-cookie': [ '__cfduid=d19f34a88e8dab49fca5f177f94ec20a81527685978; expires=Thu, 30-May-19 13:12:58 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+226 silly get     'cache-control': 'max-age=300',
+226 silly get     'cf-cache-status': 'HIT',
+226 silly get     'cf-ray': '423174987b47b78f-CDG',
+226 silly get     etag: '"791cd03acdbec5403dda6624ce20e0b4"',
+226 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+226 silly get     'last-modified': 'Sun, 27 May 2018 08:04:29 GMT',
+226 silly get     vary: 'accept-encoding, accept',
+226 silly get     server: 'cloudflare' } ]
+227 verbose etag https://registry.npmjs.org/mime-types from cache
+228 verbose get saving mime-types to /home/episanchez/.npm/registry.npmjs.org/mime-types/.cache.json
+229 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+230 silly pickManifestFromRegistryMetadata spec >=2.1.18 <2.2.0 tag latest versions [ '0.1.0',
+230 silly pickManifestFromRegistryMetadata   '1.0.0',
+230 silly pickManifestFromRegistryMetadata   '1.0.1',
+230 silly pickManifestFromRegistryMetadata   '1.0.2',
+230 silly pickManifestFromRegistryMetadata   '2.0.0',
+230 silly pickManifestFromRegistryMetadata   '2.0.1',
+230 silly pickManifestFromRegistryMetadata   '2.0.2',
+230 silly pickManifestFromRegistryMetadata   '2.0.3',
+230 silly pickManifestFromRegistryMetadata   '2.0.4',
+230 silly pickManifestFromRegistryMetadata   '2.0.5',
+230 silly pickManifestFromRegistryMetadata   '2.0.6',
+230 silly pickManifestFromRegistryMetadata   '2.0.7',
+230 silly pickManifestFromRegistryMetadata   '2.0.8',
+230 silly pickManifestFromRegistryMetadata   '2.0.9',
+230 silly pickManifestFromRegistryMetadata   '2.0.10',
+230 silly pickManifestFromRegistryMetadata   '2.0.11',
+230 silly pickManifestFromRegistryMetadata   '2.0.12',
+230 silly pickManifestFromRegistryMetadata   '2.0.13',
+230 silly pickManifestFromRegistryMetadata   '2.0.14',
+230 silly pickManifestFromRegistryMetadata   '2.1.0',
+230 silly pickManifestFromRegistryMetadata   '2.1.1',
+230 silly pickManifestFromRegistryMetadata   '2.1.2',
+230 silly pickManifestFromRegistryMetadata   '2.1.3',
+230 silly pickManifestFromRegistryMetadata   '2.1.4',
+230 silly pickManifestFromRegistryMetadata   '2.1.5',
+230 silly pickManifestFromRegistryMetadata   '2.1.6',
+230 silly pickManifestFromRegistryMetadata   '2.1.7',
+230 silly pickManifestFromRegistryMetadata   '2.1.8',
+230 silly pickManifestFromRegistryMetadata   '2.1.9',
+230 silly pickManifestFromRegistryMetadata   '2.1.10',
+230 silly pickManifestFromRegistryMetadata   '2.1.11',
+230 silly pickManifestFromRegistryMetadata   '2.1.12',
+230 silly pickManifestFromRegistryMetadata   '2.1.13',
+230 silly pickManifestFromRegistryMetadata   '2.1.14',
+230 silly pickManifestFromRegistryMetadata   '2.1.15',
+230 silly pickManifestFromRegistryMetadata   '2.1.16',
+230 silly pickManifestFromRegistryMetadata   '2.1.17',
+230 silly pickManifestFromRegistryMetadata   '2.1.18' ]
+231 silly resolveWithNewModule mime-types@2.1.18 checking installable status
+232 silly cache add args [ 'mime-types@~2.1.18', null ]
+233 verbose cache add spec mime-types@~2.1.18
+234 silly cache add parsed spec Result {
+234 silly cache add   raw: 'mime-types@~2.1.18',
+234 silly cache add   scope: null,
+234 silly cache add   escapedName: 'mime-types',
+234 silly cache add   name: 'mime-types',
+234 silly cache add   rawSpec: '~2.1.18',
+234 silly cache add   spec: '>=2.1.18 <2.2.0',
+234 silly cache add   type: 'range' }
+235 silly addNamed mime-types@>=2.1.18 <2.2.0
+236 verbose addNamed ">=2.1.18 <2.2.0" is a valid semver range for mime-types
+237 silly addNameRange { name: 'mime-types', range: '>=2.1.18 <2.2.0', hasData: false }
+238 silly mapToRegistry name mime-types
+239 silly mapToRegistry using default registry
+240 silly mapToRegistry registry https://registry.npmjs.org/
+241 silly mapToRegistry data Result {
+241 silly mapToRegistry   raw: 'mime-types',
+241 silly mapToRegistry   scope: null,
+241 silly mapToRegistry   escapedName: 'mime-types',
+241 silly mapToRegistry   name: 'mime-types',
+241 silly mapToRegistry   rawSpec: '',
+241 silly mapToRegistry   spec: 'latest',
+241 silly mapToRegistry   type: 'tag' }
+242 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+243 verbose addNameRange registry:https://registry.npmjs.org/mime-types not in flight; fetching
+244 verbose get https://registry.npmjs.org/mime-types not expired, no request
+245 silly addNameRange number 2 { name: 'mime-types', range: '>=2.1.18 <2.2.0', hasData: true }
+246 silly addNameRange versions [ 'mime-types',
+246 silly addNameRange   [ '0.1.0',
+246 silly addNameRange     '1.0.0',
+246 silly addNameRange     '1.0.1',
+246 silly addNameRange     '1.0.2',
+246 silly addNameRange     '2.0.0',
+246 silly addNameRange     '2.0.1',
+246 silly addNameRange     '2.0.2',
+246 silly addNameRange     '2.0.3',
+246 silly addNameRange     '2.0.4',
+246 silly addNameRange     '2.0.5',
+246 silly addNameRange     '2.0.6',
+246 silly addNameRange     '2.0.7',
+246 silly addNameRange     '2.0.8',
+246 silly addNameRange     '2.0.9',
+246 silly addNameRange     '2.0.10',
+246 silly addNameRange     '2.0.11',
+246 silly addNameRange     '2.0.12',
+246 silly addNameRange     '2.0.13',
+246 silly addNameRange     '2.0.14',
+246 silly addNameRange     '2.1.0',
+246 silly addNameRange     '2.1.1',
+246 silly addNameRange     '2.1.2',
+246 silly addNameRange     '2.1.3',
+246 silly addNameRange     '2.1.4',
+246 silly addNameRange     '2.1.5',
+246 silly addNameRange     '2.1.6',
+246 silly addNameRange     '2.1.7',
+246 silly addNameRange     '2.1.8',
+246 silly addNameRange     '2.1.9',
+246 silly addNameRange     '2.1.10',
+246 silly addNameRange     '2.1.11',
+246 silly addNameRange     '2.1.12',
+246 silly addNameRange     '2.1.13',
+246 silly addNameRange     '2.1.14',
+246 silly addNameRange     '2.1.15',
+246 silly addNameRange     '2.1.16',
+246 silly addNameRange     '2.1.17',
+246 silly addNameRange     '2.1.18' ] ]
+247 silly pickManifestFromRegistryMetadata spec >=2.1.18 <2.2.0 tag latest versions [ '0.1.0',
+247 silly pickManifestFromRegistryMetadata   '1.0.0',
+247 silly pickManifestFromRegistryMetadata   '1.0.1',
+247 silly pickManifestFromRegistryMetadata   '1.0.2',
+247 silly pickManifestFromRegistryMetadata   '2.0.0',
+247 silly pickManifestFromRegistryMetadata   '2.0.1',
+247 silly pickManifestFromRegistryMetadata   '2.0.2',
+247 silly pickManifestFromRegistryMetadata   '2.0.3',
+247 silly pickManifestFromRegistryMetadata   '2.0.4',
+247 silly pickManifestFromRegistryMetadata   '2.0.5',
+247 silly pickManifestFromRegistryMetadata   '2.0.6',
+247 silly pickManifestFromRegistryMetadata   '2.0.7',
+247 silly pickManifestFromRegistryMetadata   '2.0.8',
+247 silly pickManifestFromRegistryMetadata   '2.0.9',
+247 silly pickManifestFromRegistryMetadata   '2.0.10',
+247 silly pickManifestFromRegistryMetadata   '2.0.11',
+247 silly pickManifestFromRegistryMetadata   '2.0.12',
+247 silly pickManifestFromRegistryMetadata   '2.0.13',
+247 silly pickManifestFromRegistryMetadata   '2.0.14',
+247 silly pickManifestFromRegistryMetadata   '2.1.0',
+247 silly pickManifestFromRegistryMetadata   '2.1.1',
+247 silly pickManifestFromRegistryMetadata   '2.1.2',
+247 silly pickManifestFromRegistryMetadata   '2.1.3',
+247 silly pickManifestFromRegistryMetadata   '2.1.4',
+247 silly pickManifestFromRegistryMetadata   '2.1.5',
+247 silly pickManifestFromRegistryMetadata   '2.1.6',
+247 silly pickManifestFromRegistryMetadata   '2.1.7',
+247 silly pickManifestFromRegistryMetadata   '2.1.8',
+247 silly pickManifestFromRegistryMetadata   '2.1.9',
+247 silly pickManifestFromRegistryMetadata   '2.1.10',
+247 silly pickManifestFromRegistryMetadata   '2.1.11',
+247 silly pickManifestFromRegistryMetadata   '2.1.12',
+247 silly pickManifestFromRegistryMetadata   '2.1.13',
+247 silly pickManifestFromRegistryMetadata   '2.1.14',
+247 silly pickManifestFromRegistryMetadata   '2.1.15',
+247 silly pickManifestFromRegistryMetadata   '2.1.16',
+247 silly pickManifestFromRegistryMetadata   '2.1.17',
+247 silly pickManifestFromRegistryMetadata   '2.1.18' ]
+248 silly addNamed mime-types@latest
+249 verbose addNamed "latest" is being treated as a dist-tag for mime-types
+250 info addNameTag [ 'mime-types', 'latest' ]
+251 silly mapToRegistry name mime-types
+252 silly mapToRegistry using default registry
+253 silly mapToRegistry registry https://registry.npmjs.org/
+254 silly mapToRegistry data Result {
+254 silly mapToRegistry   raw: 'mime-types',
+254 silly mapToRegistry   scope: null,
+254 silly mapToRegistry   escapedName: 'mime-types',
+254 silly mapToRegistry   name: 'mime-types',
+254 silly mapToRegistry   rawSpec: '',
+254 silly mapToRegistry   spec: 'latest',
+254 silly mapToRegistry   type: 'tag' }
+255 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+256 verbose addNameTag registry:https://registry.npmjs.org/mime-types already in flight; waiting
+257 silly addNameTag next cb for mime-types with tag latest
+258 silly addNamed mime-types@2.1.18
+259 verbose addNamed "2.1.18" is a plain semver version for mime-types
+260 silly cache afterAdd mime-types@2.1.18
+261 verbose afterAdd /home/episanchez/.npm/mime-types/2.1.18/package/package.json not in flight; writing
+262 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+263 verbose afterAdd /home/episanchez/.npm/mime-types/2.1.18/package/package.json written
+264 silly fetchNamedPackageData mime-db
+265 silly mapToRegistry name mime-db
+266 silly mapToRegistry using default registry
+267 silly mapToRegistry registry https://registry.npmjs.org/
+268 silly mapToRegistry data Result {
+268 silly mapToRegistry   raw: 'mime-db',
+268 silly mapToRegistry   scope: null,
+268 silly mapToRegistry   escapedName: 'mime-db',
+268 silly mapToRegistry   name: 'mime-db',
+268 silly mapToRegistry   rawSpec: '',
+268 silly mapToRegistry   spec: 'latest',
+268 silly mapToRegistry   type: 'tag' }
+269 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+270 verbose request uri https://registry.npmjs.org/mime-db
+271 verbose request no auth needed
+272 info attempt registry request try #1 at 15:12:59
+273 verbose etag W/"f6b38ed7769c146c5b87678e14007031"
+274 verbose lastModified Sun, 27 May 2018 08:04:25 GMT
+275 http request GET https://registry.npmjs.org/mime-db
+276 http 304 https://registry.npmjs.org/mime-db
+277 verbose headers { date: 'Wed, 30 May 2018 13:12:59 GMT',
+277 verbose headers   connection: 'keep-alive',
+277 verbose headers   'set-cookie': [ '__cfduid=dbaef3d9ddd8818c45efa12a4a4f480f11527685979; expires=Thu, 30-May-19 13:12:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+277 verbose headers   'cache-control': 'max-age=300',
+277 verbose headers   'cf-cache-status': 'HIT',
+277 verbose headers   'cf-ray': '42317498ffe5b7c5-CDG',
+277 verbose headers   etag: '"f6b38ed7769c146c5b87678e14007031"',
+277 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+277 verbose headers   'last-modified': 'Sun, 27 May 2018 08:04:25 GMT',
+277 verbose headers   vary: 'accept-encoding, accept',
+277 verbose headers   server: 'cloudflare' }
+278 silly get cb [ 304,
+278 silly get   { date: 'Wed, 30 May 2018 13:12:59 GMT',
+278 silly get     connection: 'keep-alive',
+278 silly get     'set-cookie': [ '__cfduid=dbaef3d9ddd8818c45efa12a4a4f480f11527685979; expires=Thu, 30-May-19 13:12:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly; Secure' ],
+278 silly get     'cache-control': 'max-age=300',
+278 silly get     'cf-cache-status': 'HIT',
+278 silly get     'cf-ray': '42317498ffe5b7c5-CDG',
+278 silly get     etag: '"f6b38ed7769c146c5b87678e14007031"',
+278 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+278 silly get     'last-modified': 'Sun, 27 May 2018 08:04:25 GMT',
+278 silly get     vary: 'accept-encoding, accept',
+278 silly get     server: 'cloudflare' } ]
+279 verbose etag https://registry.npmjs.org/mime-db from cache
+280 verbose get saving mime-db to /home/episanchez/.npm/registry.npmjs.org/mime-db/.cache.json
+281 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+282 silly pickManifestFromRegistryMetadata spec >=1.33.0 <1.34.0 tag latest versions [ '0.0.0',
+282 silly pickManifestFromRegistryMetadata   '1.0.0',
+282 silly pickManifestFromRegistryMetadata   '1.0.1',
+282 silly pickManifestFromRegistryMetadata   '1.0.2',
+282 silly pickManifestFromRegistryMetadata   '1.0.3',
+282 silly pickManifestFromRegistryMetadata   '1.1.0',
+282 silly pickManifestFromRegistryMetadata   '1.1.1',
+282 silly pickManifestFromRegistryMetadata   '1.1.2',
+282 silly pickManifestFromRegistryMetadata   '1.2.0',
+282 silly pickManifestFromRegistryMetadata   '1.3.0',
+282 silly pickManifestFromRegistryMetadata   '1.3.1',
+282 silly pickManifestFromRegistryMetadata   '1.4.0',
+282 silly pickManifestFromRegistryMetadata   '1.5.0',
+282 silly pickManifestFromRegistryMetadata   '1.6.0',
+282 silly pickManifestFromRegistryMetadata   '1.6.1',
+282 silly pickManifestFromRegistryMetadata   '1.7.0',
+282 silly pickManifestFromRegistryMetadata   '1.8.0',
+282 silly pickManifestFromRegistryMetadata   '1.9.0',
+282 silly pickManifestFromRegistryMetadata   '1.9.1',
+282 silly pickManifestFromRegistryMetadata   '1.10.0',
+282 silly pickManifestFromRegistryMetadata   '1.11.0',
+282 silly pickManifestFromRegistryMetadata   '1.12.0',
+282 silly pickManifestFromRegistryMetadata   '1.13.0',
+282 silly pickManifestFromRegistryMetadata   '1.14.0',
+282 silly pickManifestFromRegistryMetadata   '1.15.0',
+282 silly pickManifestFromRegistryMetadata   '1.16.0',
+282 silly pickManifestFromRegistryMetadata   '1.17.0',
+282 silly pickManifestFromRegistryMetadata   '1.18.0',
+282 silly pickManifestFromRegistryMetadata   '1.19.0',
+282 silly pickManifestFromRegistryMetadata   '1.20.0',
+282 silly pickManifestFromRegistryMetadata   '1.21.0',
+282 silly pickManifestFromRegistryMetadata   '1.22.0',
+282 silly pickManifestFromRegistryMetadata   '1.23.0',
+282 silly pickManifestFromRegistryMetadata   '1.24.0',
+282 silly pickManifestFromRegistryMetadata   '1.25.0',
+282 silly pickManifestFromRegistryMetadata   '1.26.0',
+282 silly pickManifestFromRegistryMetadata   '1.27.0',
+282 silly pickManifestFromRegistryMetadata   '1.28.0',
+282 silly pickManifestFromRegistryMetadata   '1.29.0',
+282 silly pickManifestFromRegistryMetadata   '1.30.0',
+282 silly pickManifestFromRegistryMetadata   '1.31.0',
+282 silly pickManifestFromRegistryMetadata   '1.32.0',
+282 silly pickManifestFromRegistryMetadata   '1.33.0' ]
+283 silly resolveWithNewModule mime-db@1.33.0 checking installable status
+284 silly cache add args [ 'mime-db@~1.33.0', null ]
+285 verbose cache add spec mime-db@~1.33.0
+286 silly cache add parsed spec Result {
+286 silly cache add   raw: 'mime-db@~1.33.0',
+286 silly cache add   scope: null,
+286 silly cache add   escapedName: 'mime-db',
+286 silly cache add   name: 'mime-db',
+286 silly cache add   rawSpec: '~1.33.0',
+286 silly cache add   spec: '>=1.33.0 <1.34.0',
+286 silly cache add   type: 'range' }
+287 silly addNamed mime-db@>=1.33.0 <1.34.0
+288 verbose addNamed ">=1.33.0 <1.34.0" is a valid semver range for mime-db
+289 silly addNameRange { name: 'mime-db', range: '>=1.33.0 <1.34.0', hasData: false }
+290 silly mapToRegistry name mime-db
+291 silly mapToRegistry using default registry
+292 silly mapToRegistry registry https://registry.npmjs.org/
+293 silly mapToRegistry data Result {
+293 silly mapToRegistry   raw: 'mime-db',
+293 silly mapToRegistry   scope: null,
+293 silly mapToRegistry   escapedName: 'mime-db',
+293 silly mapToRegistry   name: 'mime-db',
+293 silly mapToRegistry   rawSpec: '',
+293 silly mapToRegistry   spec: 'latest',
+293 silly mapToRegistry   type: 'tag' }
+294 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+295 verbose addNameRange registry:https://registry.npmjs.org/mime-db not in flight; fetching
+296 verbose get https://registry.npmjs.org/mime-db not expired, no request
+297 silly addNameRange number 2 { name: 'mime-db', range: '>=1.33.0 <1.34.0', hasData: true }
+298 silly addNameRange versions [ 'mime-db',
+298 silly addNameRange   [ '0.0.0',
+298 silly addNameRange     '1.0.0',
+298 silly addNameRange     '1.0.1',
+298 silly addNameRange     '1.0.2',
+298 silly addNameRange     '1.0.3',
+298 silly addNameRange     '1.1.0',
+298 silly addNameRange     '1.1.1',
+298 silly addNameRange     '1.1.2',
+298 silly addNameRange     '1.2.0',
+298 silly addNameRange     '1.3.0',
+298 silly addNameRange     '1.3.1',
+298 silly addNameRange     '1.4.0',
+298 silly addNameRange     '1.5.0',
+298 silly addNameRange     '1.6.0',
+298 silly addNameRange     '1.6.1',
+298 silly addNameRange     '1.7.0',
+298 silly addNameRange     '1.8.0',
+298 silly addNameRange     '1.9.0',
+298 silly addNameRange     '1.9.1',
+298 silly addNameRange     '1.10.0',
+298 silly addNameRange     '1.11.0',
+298 silly addNameRange     '1.12.0',
+298 silly addNameRange     '1.13.0',
+298 silly addNameRange     '1.14.0',
+298 silly addNameRange     '1.15.0',
+298 silly addNameRange     '1.16.0',
+298 silly addNameRange     '1.17.0',
+298 silly addNameRange     '1.18.0',
+298 silly addNameRange     '1.19.0',
+298 silly addNameRange     '1.20.0',
+298 silly addNameRange     '1.21.0',
+298 silly addNameRange     '1.22.0',
+298 silly addNameRange     '1.23.0',
+298 silly addNameRange     '1.24.0',
+298 silly addNameRange     '1.25.0',
+298 silly addNameRange     '1.26.0',
+298 silly addNameRange     '1.27.0',
+298 silly addNameRange     '1.28.0',
+298 silly addNameRange     '1.29.0',
+298 silly addNameRange     '1.30.0',
+298 silly addNameRange     '1.31.0',
+298 silly addNameRange     '1.32.0',
+298 silly addNameRange     '1.33.0' ] ]
+299 silly pickManifestFromRegistryMetadata spec >=1.33.0 <1.34.0 tag latest versions [ '0.0.0',
+299 silly pickManifestFromRegistryMetadata   '1.0.0',
+299 silly pickManifestFromRegistryMetadata   '1.0.1',
+299 silly pickManifestFromRegistryMetadata   '1.0.2',
+299 silly pickManifestFromRegistryMetadata   '1.0.3',
+299 silly pickManifestFromRegistryMetadata   '1.1.0',
+299 silly pickManifestFromRegistryMetadata   '1.1.1',
+299 silly pickManifestFromRegistryMetadata   '1.1.2',
+299 silly pickManifestFromRegistryMetadata   '1.2.0',
+299 silly pickManifestFromRegistryMetadata   '1.3.0',
+299 silly pickManifestFromRegistryMetadata   '1.3.1',
+299 silly pickManifestFromRegistryMetadata   '1.4.0',
+299 silly pickManifestFromRegistryMetadata   '1.5.0',
+299 silly pickManifestFromRegistryMetadata   '1.6.0',
+299 silly pickManifestFromRegistryMetadata   '1.6.1',
+299 silly pickManifestFromRegistryMetadata   '1.7.0',
+299 silly pickManifestFromRegistryMetadata   '1.8.0',
+299 silly pickManifestFromRegistryMetadata   '1.9.0',
+299 silly pickManifestFromRegistryMetadata   '1.9.1',
+299 silly pickManifestFromRegistryMetadata   '1.10.0',
+299 silly pickManifestFromRegistryMetadata   '1.11.0',
+299 silly pickManifestFromRegistryMetadata   '1.12.0',
+299 silly pickManifestFromRegistryMetadata   '1.13.0',
+299 silly pickManifestFromRegistryMetadata   '1.14.0',
+299 silly pickManifestFromRegistryMetadata   '1.15.0',
+299 silly pickManifestFromRegistryMetadata   '1.16.0',
+299 silly pickManifestFromRegistryMetadata   '1.17.0',
+299 silly pickManifestFromRegistryMetadata   '1.18.0',
+299 silly pickManifestFromRegistryMetadata   '1.19.0',
+299 silly pickManifestFromRegistryMetadata   '1.20.0',
+299 silly pickManifestFromRegistryMetadata   '1.21.0',
+299 silly pickManifestFromRegistryMetadata   '1.22.0',
+299 silly pickManifestFromRegistryMetadata   '1.23.0',
+299 silly pickManifestFromRegistryMetadata   '1.24.0',
+299 silly pickManifestFromRegistryMetadata   '1.25.0',
+299 silly pickManifestFromRegistryMetadata   '1.26.0',
+299 silly pickManifestFromRegistryMetadata   '1.27.0',
+299 silly pickManifestFromRegistryMetadata   '1.28.0',
+299 silly pickManifestFromRegistryMetadata   '1.29.0',
+299 silly pickManifestFromRegistryMetadata   '1.30.0',
+299 silly pickManifestFromRegistryMetadata   '1.31.0',
+299 silly pickManifestFromRegistryMetadata   '1.32.0',
+299 silly pickManifestFromRegistryMetadata   '1.33.0' ]
+300 silly addNamed mime-db@latest
+301 verbose addNamed "latest" is being treated as a dist-tag for mime-db
+302 info addNameTag [ 'mime-db', 'latest' ]
+303 silly mapToRegistry name mime-db
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry data Result {
+306 silly mapToRegistry   raw: 'mime-db',
+306 silly mapToRegistry   scope: null,
+306 silly mapToRegistry   escapedName: 'mime-db',
+306 silly mapToRegistry   name: 'mime-db',
+306 silly mapToRegistry   rawSpec: '',
+306 silly mapToRegistry   spec: 'latest',
+306 silly mapToRegistry   type: 'tag' }
+307 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+308 verbose addNameTag registry:https://registry.npmjs.org/mime-db already in flight; waiting
+309 silly addNameTag next cb for mime-db with tag latest
+310 silly addNamed mime-db@1.33.0
+311 verbose addNamed "1.33.0" is a plain semver version for mime-db
+312 silly cache afterAdd mime-db@1.33.0
+313 verbose afterAdd /home/episanchez/.npm/mime-db/1.33.0/package/package.json not in flight; writing
+314 verbose correctMkdir /home/episanchez/.npm correctMkdir not in flight; initializing
+315 verbose afterAdd /home/episanchez/.npm/mime-db/1.33.0/package/package.json written
+316 silly loadAllDepsIntoIdealTree Finishing
+317 silly loadIdealTree Finishing
+318 silly currentTree node-articles-api@0.0.0
+319 silly idealTree node-articles-api@0.0.0
+319 silly idealTree ├── aws-serverless-express@3.2.0
+319 silly idealTree ├── binary-case@1.1.4
+319 silly idealTree ├── media-typer@0.3.0
+319 silly idealTree ├── mime-db@1.33.0
+319 silly idealTree ├── mime-types@2.1.18
+319 silly idealTree └── type-is@1.6.16
+320 silly generateActionsToTake Starting
+321 silly install generateActionsToTake
+322 silly generateActionsToTake Finishing
+323 silly diffTrees action count 6
+324 silly diffTrees add binary-case@1.1.4
+325 silly diffTrees add media-typer@0.3.0
+326 silly diffTrees add mime-db@1.33.0
+327 silly diffTrees add mime-types@2.1.18
+328 silly diffTrees add type-is@1.6.16
+329 silly diffTrees add aws-serverless-express@3.2.0
+330 silly decomposeActions action count 48
+331 silly decomposeActions fetch binary-case@1.1.4
+332 silly decomposeActions extract binary-case@1.1.4
+333 silly decomposeActions test binary-case@1.1.4
+334 silly decomposeActions preinstall binary-case@1.1.4
+335 silly decomposeActions build binary-case@1.1.4
+336 silly decomposeActions install binary-case@1.1.4
+337 silly decomposeActions postinstall binary-case@1.1.4
+338 silly decomposeActions finalize binary-case@1.1.4
+339 silly decomposeActions fetch media-typer@0.3.0
+340 silly decomposeActions extract media-typer@0.3.0
+341 silly decomposeActions test media-typer@0.3.0
+342 silly decomposeActions preinstall media-typer@0.3.0
+343 silly decomposeActions build media-typer@0.3.0
+344 silly decomposeActions install media-typer@0.3.0
+345 silly decomposeActions postinstall media-typer@0.3.0
+346 silly decomposeActions finalize media-typer@0.3.0
+347 silly decomposeActions fetch mime-db@1.33.0
+348 silly decomposeActions extract mime-db@1.33.0
+349 silly decomposeActions test mime-db@1.33.0
+350 silly decomposeActions preinstall mime-db@1.33.0
+351 silly decomposeActions build mime-db@1.33.0
+352 silly decomposeActions install mime-db@1.33.0
+353 silly decomposeActions postinstall mime-db@1.33.0
+354 silly decomposeActions finalize mime-db@1.33.0
+355 silly decomposeActions fetch mime-types@2.1.18
+356 silly decomposeActions extract mime-types@2.1.18
+357 silly decomposeActions test mime-types@2.1.18
+358 silly decomposeActions preinstall mime-types@2.1.18
+359 silly decomposeActions build mime-types@2.1.18
+360 silly decomposeActions install mime-types@2.1.18
+361 silly decomposeActions postinstall mime-types@2.1.18
+362 silly decomposeActions finalize mime-types@2.1.18
+363 silly decomposeActions fetch type-is@1.6.16
+364 silly decomposeActions extract type-is@1.6.16
+365 silly decomposeActions test type-is@1.6.16
+366 silly decomposeActions preinstall type-is@1.6.16
+367 silly decomposeActions build type-is@1.6.16
+368 silly decomposeActions install type-is@1.6.16
+369 silly decomposeActions postinstall type-is@1.6.16
+370 silly decomposeActions finalize type-is@1.6.16
+371 silly decomposeActions fetch aws-serverless-express@3.2.0
+372 silly decomposeActions extract aws-serverless-express@3.2.0
+373 silly decomposeActions test aws-serverless-express@3.2.0
+374 silly decomposeActions preinstall aws-serverless-express@3.2.0
+375 silly decomposeActions build aws-serverless-express@3.2.0
+376 silly decomposeActions install aws-serverless-express@3.2.0
+377 silly decomposeActions postinstall aws-serverless-express@3.2.0
+378 silly decomposeActions finalize aws-serverless-express@3.2.0
+379 silly runTopLevelLifecycles Starting
+380 silly install runPreinstallTopLevelLifecycles
+381 silly preinstall node-articles-api@0.0.0
+382 info lifecycle node-articles-api@0.0.0~preinstall: node-articles-api@0.0.0
+383 silly lifecycle node-articles-api@0.0.0~preinstall: no script for preinstall, continuing
+384 silly executeActions Starting
+385 silly install executeActions
+386 silly doSerial global-install 0
+387 silly doParallel fetch 6
+388 verbose correctMkdir /home/episanchez/.npm/_locks correctMkdir not in flight; initializing
+389 verbose lock using /home/episanchez/.npm/_locks/staging-1ad1abd720972142.lock for /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging
+390 silly doParallel extract 6
+391 silly extract binary-case@1.1.4
+392 silly extract media-typer@0.3.0
+393 silly extract mime-db@1.33.0
+394 silly extract mime-types@2.1.18
+395 silly extract type-is@1.6.16
+396 silly extract aws-serverless-express@3.2.0
+397 verbose unbuild node_modules/.staging/mime-db-74a1e240
+398 verbose unbuild node_modules/.staging/mime-types-472787c9
+399 verbose unbuild node_modules/.staging/type-is-28ed1481
+400 verbose unbuild node_modules/.staging/media-typer-73fb4a76
+401 verbose unbuild node_modules/.staging/aws-serverless-express-7fdf156a
+402 verbose unbuild node_modules/.staging/binary-case-e982ef3f
+403 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240 is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+404 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240
+405 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9 is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+406 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9
+407 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481 is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+408 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481
+409 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76 is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+410 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76
+411 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+412 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a
+413 verbose tar unpack /home/episanchez/.npm/mime-db/1.33.0/package.tgz
+414 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240
+415 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240 is being purged
+416 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240
+417 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f is being purged from base /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+418 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f
+419 verbose tar unpack /home/episanchez/.npm/mime-types/2.1.18/package.tgz
+420 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9
+421 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9 is being purged
+422 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9
+423 verbose tar unpack /home/episanchez/.npm/type-is/1.6.16/package.tgz
+424 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481
+425 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481 is being purged
+426 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481
+427 verbose tar unpack /home/episanchez/.npm/media-typer/0.3.0/package.tgz
+428 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76
+429 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76 is being purged
+430 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76
+431 verbose tar unpack /home/episanchez/.npm/aws-serverless-express/3.2.0/package.tgz
+432 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a
+433 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a is being purged
+434 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a
+435 silly gunzTarPerm modes [ '775', '664' ]
+436 verbose tar unpack /home/episanchez/.npm/binary-case/1.1.4/package.tgz
+437 verbose tar unpacking to /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f
+438 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f is being purged
+439 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f
+440 silly gunzTarPerm modes [ '775', '664' ]
+441 silly gunzTarPerm modes [ '775', '664' ]
+442 silly gunzTarPerm modes [ '775', '664' ]
+443 silly gunzTarPerm modes [ '775', '664' ]
+444 silly gunzTarPerm modes [ '775', '664' ]
+445 silly gunzTarPerm extractEntry package.json
+446 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+447 silly gunzTarPerm extractEntry package.json
+448 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+449 silly gunzTarPerm extractEntry package.json
+450 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+451 silly gunzTarPerm extractEntry package.json
+452 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+453 silly gunzTarPerm extractEntry package.json
+454 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+455 silly gunzTarPerm extractEntry package.json
+456 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+457 silly gunzTarPerm extractEntry db.json
+458 silly gunzTarPerm modified mode [ 'db.json', 420, 436 ]
+459 silly gunzTarPerm extractEntry HISTORY.md
+460 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 436 ]
+461 silly gunzTarPerm extractEntry index.js
+462 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+463 silly gunzTarPerm extractEntry HISTORY.md
+464 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 436 ]
+465 silly gunzTarPerm extractEntry index.js
+466 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+467 silly gunzTarPerm extractEntry README.md
+468 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+469 silly gunzTarPerm extractEntry LICENSE
+470 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+471 silly gunzTarPerm extractEntry CHANGELOG.md
+472 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+473 silly gunzTarPerm extractEntry index.js
+474 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+475 silly gunzTarPerm extractEntry .travis.yml
+476 silly gunzTarPerm extractEntry demo.js
+477 silly gunzTarPerm modified mode [ 'demo.js', 420, 436 ]
+478 silly gunzTarPerm extractEntry HISTORY.md
+479 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 436 ]
+480 silly gunzTarPerm extractEntry index.js
+481 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+482 silly gunzTarPerm extractEntry LICENSE
+483 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+484 silly gunzTarPerm extractEntry README.md
+485 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+486 silly gunzTarPerm extractEntry LICENSE
+487 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+488 silly gunzTarPerm extractEntry README.md
+489 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+490 silly gunzTarPerm extractEntry LICENSE
+491 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+492 silly gunzTarPerm extractEntry README.md
+493 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+494 silly gunzTarPerm extractEntry index.js
+495 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+496 silly gunzTarPerm extractEntry LICENSE
+497 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+498 silly gunzTarPerm extractEntry LICENSE
+499 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+500 silly gunzTarPerm extractEntry middleware.js
+501 silly gunzTarPerm modified mode [ 'middleware.js', 420, 436 ]
+502 silly gunzTarPerm extractEntry NOTICE.txt
+503 silly gunzTarPerm modified mode [ 'NOTICE.txt', 420, 436 ]
+504 silly gunzTarPerm extractEntry README.md
+505 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+506 silly gunzTarPerm extractEntry index.js
+507 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+508 silly gunzTarPerm extractEntry HISTORY.md
+509 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+510 silly gunzTarPerm extractEntry README.md
+511 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+512 silly gunzTarPerm extractEntry test.js
+513 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+514 silly gunzTarPerm extractEntry .idea/binary-case.iml
+515 silly gunzTarPerm extractEntry .idea/markdown-navigator.xml
+516 silly gunzTarPerm extractEntry .idea/markdown-navigator/profiles_settings.xml
+517 silly gunzTarPerm extractEntry .idea/misc.xml
+518 silly gunzTarPerm extractEntry .idea/modules.xml
+519 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76/node_modules is being purged
+520 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/media-typer-73fb4a76/node_modules
+521 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9/node_modules is being purged
+522 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-types-472787c9/node_modules
+523 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481/node_modules is being purged
+524 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/type-is-28ed1481/node_modules
+525 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a/node_modules is being purged
+526 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/aws-serverless-express-7fdf156a/node_modules
+527 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240/node_modules is being purged
+528 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/mime-db-74a1e240/node_modules
+529 silly gentlyRm /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f/node_modules is being purged
+530 verbose gentlyRm don't care about contents; nuking /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging/binary-case-e982ef3f/node_modules
+531 silly doParallel preinstall 6
+532 silly preinstall binary-case@1.1.4
+533 info lifecycle binary-case@1.1.4~preinstall: binary-case@1.1.4
+534 silly preinstall media-typer@0.3.0
+535 info lifecycle media-typer@0.3.0~preinstall: media-typer@0.3.0
+536 silly preinstall mime-db@1.33.0
+537 info lifecycle mime-db@1.33.0~preinstall: mime-db@1.33.0
+538 silly preinstall mime-types@2.1.18
+539 info lifecycle mime-types@2.1.18~preinstall: mime-types@2.1.18
+540 silly preinstall type-is@1.6.16
+541 info lifecycle type-is@1.6.16~preinstall: type-is@1.6.16
+542 silly preinstall aws-serverless-express@3.2.0
+543 info lifecycle aws-serverless-express@3.2.0~preinstall: aws-serverless-express@3.2.0
+544 silly lifecycle binary-case@1.1.4~preinstall: no script for preinstall, continuing
+545 silly lifecycle media-typer@0.3.0~preinstall: no script for preinstall, continuing
+546 silly lifecycle mime-db@1.33.0~preinstall: no script for preinstall, continuing
+547 silly lifecycle mime-types@2.1.18~preinstall: no script for preinstall, continuing
+548 silly lifecycle type-is@1.6.16~preinstall: no script for preinstall, continuing
+549 silly lifecycle aws-serverless-express@3.2.0~preinstall: no script for preinstall, continuing
+550 silly doReverseSerial remove 0
+551 silly doSerial move 0
+552 silly doSerial finalize 6
+553 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/binary-case
+554 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/media-typer
+555 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/mime-db
+556 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/mime-types
+557 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/type-is
+558 silly finalize /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/aws-serverless-express
+559 silly doSerial build 6
+560 silly build binary-case@1.1.4
+561 info linkStuff binary-case@1.1.4
+562 silly linkStuff binary-case@1.1.4 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+563 verbose linkBins binary-case@1.1.4
+564 verbose linkMans binary-case@1.1.4
+565 silly build media-typer@0.3.0
+566 info linkStuff media-typer@0.3.0
+567 silly linkStuff media-typer@0.3.0 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+568 verbose linkBins media-typer@0.3.0
+569 verbose linkMans media-typer@0.3.0
+570 silly build mime-db@1.33.0
+571 info linkStuff mime-db@1.33.0
+572 silly linkStuff mime-db@1.33.0 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+573 verbose linkBins mime-db@1.33.0
+574 verbose linkMans mime-db@1.33.0
+575 silly build mime-types@2.1.18
+576 info linkStuff mime-types@2.1.18
+577 silly linkStuff mime-types@2.1.18 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+578 verbose linkBins mime-types@2.1.18
+579 verbose linkMans mime-types@2.1.18
+580 silly build type-is@1.6.16
+581 info linkStuff type-is@1.6.16
+582 silly linkStuff type-is@1.6.16 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+583 verbose linkBins type-is@1.6.16
+584 verbose linkMans type-is@1.6.16
+585 silly build aws-serverless-express@3.2.0
+586 info linkStuff aws-serverless-express@3.2.0
+587 silly linkStuff aws-serverless-express@3.2.0 has /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules as its parent node_modules
+588 verbose linkBins aws-serverless-express@3.2.0
+589 verbose linkMans aws-serverless-express@3.2.0
+590 silly doSerial global-link 0
+591 silly doParallel update-linked 0
+592 silly doSerial install 6
+593 silly install binary-case@1.1.4
+594 info lifecycle binary-case@1.1.4~install: binary-case@1.1.4
+595 silly lifecycle binary-case@1.1.4~install: no script for install, continuing
+596 silly install media-typer@0.3.0
+597 info lifecycle media-typer@0.3.0~install: media-typer@0.3.0
+598 silly lifecycle media-typer@0.3.0~install: no script for install, continuing
+599 silly install mime-db@1.33.0
+600 info lifecycle mime-db@1.33.0~install: mime-db@1.33.0
+601 silly lifecycle mime-db@1.33.0~install: no script for install, continuing
+602 silly install mime-types@2.1.18
+603 info lifecycle mime-types@2.1.18~install: mime-types@2.1.18
+604 silly lifecycle mime-types@2.1.18~install: no script for install, continuing
+605 silly install type-is@1.6.16
+606 info lifecycle type-is@1.6.16~install: type-is@1.6.16
+607 silly lifecycle type-is@1.6.16~install: no script for install, continuing
+608 silly install aws-serverless-express@3.2.0
+609 info lifecycle aws-serverless-express@3.2.0~install: aws-serverless-express@3.2.0
+610 silly lifecycle aws-serverless-express@3.2.0~install: no script for install, continuing
+611 silly doSerial postinstall 6
+612 silly postinstall binary-case@1.1.4
+613 info lifecycle binary-case@1.1.4~postinstall: binary-case@1.1.4
+614 silly lifecycle binary-case@1.1.4~postinstall: no script for postinstall, continuing
+615 silly postinstall media-typer@0.3.0
+616 info lifecycle media-typer@0.3.0~postinstall: media-typer@0.3.0
+617 silly lifecycle media-typer@0.3.0~postinstall: no script for postinstall, continuing
+618 silly postinstall mime-db@1.33.0
+619 info lifecycle mime-db@1.33.0~postinstall: mime-db@1.33.0
+620 silly lifecycle mime-db@1.33.0~postinstall: no script for postinstall, continuing
+621 silly postinstall mime-types@2.1.18
+622 info lifecycle mime-types@2.1.18~postinstall: mime-types@2.1.18
+623 silly lifecycle mime-types@2.1.18~postinstall: no script for postinstall, continuing
+624 silly postinstall type-is@1.6.16
+625 info lifecycle type-is@1.6.16~postinstall: type-is@1.6.16
+626 silly lifecycle type-is@1.6.16~postinstall: no script for postinstall, continuing
+627 silly postinstall aws-serverless-express@3.2.0
+628 info lifecycle aws-serverless-express@3.2.0~postinstall: aws-serverless-express@3.2.0
+629 silly lifecycle aws-serverless-express@3.2.0~postinstall: no script for postinstall, continuing
+630 verbose unlock done using /home/episanchez/.npm/_locks/staging-1ad1abd720972142.lock for /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api/node_modules/.staging
+631 silly executeActions Finishing
+632 silly rollbackFailedOptional Starting
+633 silly rollbackFailedOptional Finishing
+634 silly install runPostinstallTopLevelLifecycles
+635 silly build node-articles-api@0.0.0
+636 info linkStuff node-articles-api@0.0.0
+637 silly linkStuff node-articles-api@0.0.0 has /home/episanchez/Workspace/popcore/core/lambda/lambdas as its parent node_modules
+638 verbose linkBins node-articles-api@0.0.0
+639 verbose linkMans node-articles-api@0.0.0
+640 silly install node-articles-api@0.0.0
+641 info lifecycle node-articles-api@0.0.0~install: node-articles-api@0.0.0
+642 silly lifecycle node-articles-api@0.0.0~install: no script for install, continuing
+643 silly postinstall node-articles-api@0.0.0
+644 info lifecycle node-articles-api@0.0.0~postinstall: node-articles-api@0.0.0
+645 silly lifecycle node-articles-api@0.0.0~postinstall: no script for postinstall, continuing
+646 silly prepublish node-articles-api@0.0.0
+647 info lifecycle node-articles-api@0.0.0~prepublish: node-articles-api@0.0.0
+648 silly lifecycle node-articles-api@0.0.0~prepublish: no script for prepublish, continuing
+649 info lifecycle node-articles-api@0.0.0~prepare: node-articles-api@0.0.0
+650 silly lifecycle node-articles-api@0.0.0~prepare: no script for prepare, continuing
+651 silly runTopLevelLifecycles Finishing
+652 silly install printInstalled
+653 warn node-articles-api@0.0.0 No description
+654 verbose If you need help, you may report this error at:
+654 verbose     <https://github.com/npm/npm/issues>
+655 warn node-articles-api@0.0.0 No repository field.
+656 verbose If you need help, you may report this error at:
+656 verbose     <https://github.com/npm/npm/issues>
+657 warn node-articles-api@0.0.0 No license field.
+658 verbose If you need help, you may report this error at:
+658 verbose     <https://github.com/npm/npm/issues>
+659 verbose exit [ 0, true ]
+660 verbose stack Error: write EPIPE
+660 verbose stack     at exports._errnoException (util.js:1033:11)
+660 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:816:14)
+661 verbose cwd /home/episanchez/Workspace/popcore/core/lambda/lambdas/node-articles-api
+662 error Linux 4.4.0-127-generic
+663 error argv "/home/episanchez/.nvm/versions/node/v7.7.3/bin/node" "/home/episanchez/.nvm/versions/node/v7.7.3/bin/npm" "install" "--loglevel=error"
+664 error node v7.7.3
+665 error npm  v4.1.2
+666 error code EPIPE
+667 error errno EPIPE
+668 error syscall write
+669 error write EPIPE
+670 error If you need help, you may report this error at:
+670 error     <https://github.com/npm/npm/issues>
+671 verbose exit [ 1, true ]
