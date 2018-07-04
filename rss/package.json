@@ -1,0 +1,8 @@
+{
+  "name": "rss-feed-reader",
+  "version": "0.0.1",
+  "dependencies": {
+    "iconv": "^2.3.0",
+    "rss-feed-emitter": "2.0.0"
+  }
+}
