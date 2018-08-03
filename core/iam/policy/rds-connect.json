@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "rds-db:connect"
+            ],
+            "Resource": [
+              "arn:aws:rds:eu-west-3:826966556286:db:popvox-db"
+                "arn:aws:rds-db:eu-west-3:826966556286:dbuser:db-KKKABAAABBBCCCDDD222111ZZZ/usuarioiam"
+            ]
+        }
+    ]
+}
