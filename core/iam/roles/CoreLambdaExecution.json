@@ -1,6 +1,6 @@
 {
   "description": "Allow Lambda to write in CloudWatch",
-  "managed-policies": ["AWSLambdaBasicExecutionRole"],
+  "managed-policies": ["AWSLambdaBasicExecutionRole", "AmazonVPCFullAccess", "AmazonRDSFullAccess"],
   "inline-policies": [],
   "trust-relationship": {
     "Version": "2012-10-17",

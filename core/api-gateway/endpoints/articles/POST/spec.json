@@ -5,7 +5,7 @@
     ],
     "lambda": "node-articles-api"
   },
-  "summary": "Proxy to Lambda",
+  "summary": "Create a delivery",
   "responses": {
     "200": {}
   },
