@@ -2,7 +2,7 @@ var FeedParser = require('feedparser');
 var request = require('request'); // for fetching the feed
 
 var mysql      = require('mysql');
-var connection = mysql.createConnection({
+var connection = mysql.createPool({
   host     : 'popvox-mysql-articles-db.cajp6pxatu6q.eu-west-3.rds.amazonaws.com',
   user     : 'popvox_db_admin',
   password : 'asvBJ{[#',
