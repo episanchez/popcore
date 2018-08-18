@@ -1,0 +1,27 @@
+{
+  "x-myrmex": {
+    "apis": [
+      "node-articles-management"
+    ],
+    "lambda": "node-articles-api"
+  },
+  "summary": "Create a delivery",
+  "responses": {
+    "200": {}
+  },
+  "x-amazon-apigateway-auth": {
+    "type": "none"
+  },
+  "x-amazon-apigateway-integration": {
+    "credentials": "CoreLambdaInvocation",
+    "responses": {
+      "default": {
+        "statusCode": 200
+      }
+    },
+    "type": "aws_proxy",
+    "contentHandling": "CONVERT_TO_TEXT",
+    "passthroughBehavior": "when_no_match",
+    "httpMethod": "POST"
+  }
+}

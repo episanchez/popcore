@@ -1,0 +1,2 @@
+mysql -h popvox-mysql-articles-db.cajp6pxatu6q.eu-west-3.rds.amazonaws.com -D popvox_mysql_db_main  -u popvox_db_admin -p
+
